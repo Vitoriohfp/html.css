@@ -1,0 +1,31 @@
+@charset "UTF-8"
+{
+    font-family: arial, helvetica, sans-serif;
+}
+body{
+    background-image: linear-gradient(to right,#02735E, #03A678); 
+} /*tag usada para fazer o degradê*/
+
+main{
+background-color: #014040;/*para selecionar fundo desse periodo*/
+border-radius: 10px;/*arredondar as bordas*/
+box-shadow: 5px 5px 15px #012b2b;/*gerar sombra(lado; baixo; espalhamento; cor)*/
+width: 600px; /*não usar toda a largura*/
+padding: 10px; /*deixar um espaço maior ao redor do texto*/
+margin: auto;/*centralzar todo o periodo*/
+
+}
+
+h1 {
+    color: #F27405;
+    text-align: center;
+    text-shadow: 1px 1px 2px #aa5204af;
+}
+
+h2{
+color: #731702;
+}
+
+p{
+text-align: justify;
+} /*tag para deixar o final alinhado*/
