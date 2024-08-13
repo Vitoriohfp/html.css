@@ -1,5 +1,45 @@
-@charset "URF-8"
+@charset "URF-8";
+* {
+    margin: 0px;
+    padding: 0px;
+}
 
-body{
-    background-color: red;
+html, body {
+    min-height: 100vh;
+    background-color: darkgrey;
+}
+
+header {
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+header > h1{
+    padding-top: 50px; /*Gerar um espaço no para cima*/
+    font-variant: small-caps; /*Letras maiusculas, porem a primeira é maior*/
+}
+header > p{
+    padding-bottom: 50px;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+a:hover{
+    text-decoration: underline;
+    color: rgb(61, 61, 61);
+}
+section.normal{
+    background-color: white;
+    color: black;
+}
+section.imagem{
+    background-color: rgb(48, 48, 47);
+    color: white;
+}
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
 }
