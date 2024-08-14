@@ -1,15 +1,15 @@
 @charset "UTF-8";
 
 :root{
-    --color1: #04080D;
-    --color2: #262621;
-    --color3: #59381B;
-    --color4: #8C6B4D;
-    --color5: #1b0f49;
+    --color1: #0D0D0D;
+    --color2: #401F13;
+    --color3: #BF784E;
+    --color4: #D97218;
+    --color5: #F29A2E;
 }
 
 header{
-    background-image: linear-gradient(to top, var(--color5), var(--color1));
+    background-image: linear-gradient(to bottom, var(--color5), var(--color1));
     color: white;
     padding: 30px;
     width: 100%;
@@ -21,11 +21,34 @@ header > h1{
     padding: 10px;
 }
 nav{
-    background-color: var(--color5);
-    margin-left: -8px;
-    margin-top: -8px;
-    width: 102%;
+    background-color: var(--color1);
+    padding: 10px;
+    margin: 0px;
+    border: 10px;
+    width: 100vw;
+
 }
 nav a{
-    bottom: 10px;
+    
+}
+body{
+    background-color: var(--color3);
+}
+main{
+    min-width: 400px;
+    max-width: 980px;
+    margin: auto;
+    background-color: var(--color2);
+    padding-top: 1px;
+    
+
+}
+footer{
+    background-color:var(--color1);
+    color: white;
+    text-align: center;
+    padding: 12px;
+    padding-top: 10px;
+    margin: -10px;
+    width: 100vw;
 }
