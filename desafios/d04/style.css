@@ -26,22 +26,31 @@ nav{
     margin: 0px;
     border: 10px;
     width: 100vw;
-
 }
 nav a{
     
 }
 body{
-    background-color: var(--color3);
+    background-color:  rgb(0, 0, 0);
 }
 main{
     min-width: 400px;
-    max-width: 980px;
+    max-width: 846px;
     margin: auto;
-    background-color: var(--color2);
+    background-color: var(--color4);
     padding-top: 1px;
+}
+main > h2{
+    text-align: center;
+}
+main > article#img1{
+    background-image: url(img/violão.jpg);
+    padding: 9px;
+    height: 80vh;
+    width:94vw;
+    background-repeat: no-repeat;
+    margin: 10px;
     
-
 }
 footer{
     background-color:var(--color1);
