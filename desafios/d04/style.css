@@ -1,63 +1,85 @@
 @charset "UTF-8";
 
 :root{
-    --color1: #0D0D0D;
-    --color2: #401F13;
-    --color3: #BF784E;
-    --color4: #D97218;
-    --color5: #F29A2E;
+    --color0: #103b39;
+    --color1: #234B49;
+    --color2: #80CAC8;
+    --color3: #C4F5F3;
+    --color4: #237572;
+    --color5: #D4FFFE;
+    --color6: #AAFFFC;
 }
 
-header{
-    background-image: linear-gradient(to bottom, var(--color5), var(--color1));
-    color: white;
-    padding: 30px;
-    width: 100%;
-    margin-left: -8px;
-    margin-top: -8px;
+body{
+    background-color: rgb(37, 37, 37);
 }
-header > h1{
+header{
+    background-image: linear-gradient(to bottom, black, var(--color1));
+    color: white;
+    padding: 20px;
+    border: 0px;
+    margin: -8px -8px 0px -8px;
     text-align: center;
-    padding: 10px;
 }
 nav{
     background-color: var(--color1);
     padding: 10px;
-    margin: 0px;
-    border: 10px;
-    width: 100vw;
+    border: 1px;
+    margin: 0px -8px 0px -8px;
 }
 nav a{
-    
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    border: 0px;
+    margin: 3px;
+    padding: 6px 6px 0px 6px;
+    background-color: var(--color0);
+    text-align: center;
 }
-body{
-    background-color:  rgb(0, 0, 0);
+nav a:hover{
+    background-color: var(--color2);
+    text-decoration: underline;
 }
 main{
-    min-width: 400px;
-    max-width: 846px;
-    margin: auto;
-    background-color: var(--color4);
-    padding-top: 1px;
+    padding: 10px;
+    width: 90vw;
 }
-main > h2{
-    text-align: center;
-}
-main > article#img1{
-    background-image: url(img/violão.jpg);
-    padding: 9px;
-    height: 80vh;
-    width:94vw;
-    background-repeat: no-repeat;
-    margin: 10px;
+main h2{
+    text-align: left;
+    background-image: linear-gradient(to right, black, transparent);
+    color: white;
+    padding: 10px;
+    
     
 }
+main p{
+    text-shadow: 2px 2px 10px rgb(99, 99, 99);
+    color: white;
+}
+main article{
+    background-position: center center;
+    background-attachment: fixed;
+}
+main article#violao{
+    background-image: url(img/violão.jpg);
+}
+main article#baixo{
+    background-image: url(img/fundo\ contrabaixo.jpg);
+}
+main article#guitarra{
+    background-image: url(img/guitarra.jpg);
+}
+main article#bateria{
+    background-image: url(img/bateria.jpg);
+}
+main h3{
+    text-align: center;
+}
 footer{
-    background-color:var(--color1);
     color: white;
     text-align: center;
-    padding: 12px;
-    padding-top: 10px;
+    background-color: black;
+    padding: 10px;
     margin: -10px;
-    width: 100vw;
 }
+
