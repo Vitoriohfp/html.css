@@ -44,7 +44,8 @@ nav a:hover{
 }
 main{
     padding: 10px;
-    width: 90vw;
+    width: auto;
+    
 }
 main h2{
     text-align: center;
@@ -61,12 +62,13 @@ main p{
     border-radius: 10px;
     text-align: justify;
     text-indent: 15px;
-    font-size: 3vw;
+    font-size: 2.2vw;
 }
 main article{
     background-attachment: fixed;
     background-repeat: no-repeat;
     background-size: cover;
+    box-shadow: inset 2px 2px 15px black;
 }
 main article#violao{
     background-image: url(img/fundo.jpg);
@@ -96,5 +98,13 @@ footer{
     background-color: black;
     padding: 10px;
     width: 97%;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+    color: rgb(170, 177, 229);
 }
 
