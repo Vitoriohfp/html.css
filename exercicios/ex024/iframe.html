@@ -4,11 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Estudos de iframe</title>
+    <style>
+iframe{
+    height: 300px;
+    width: 500px;
+}
+
+    </style>
 </head>
 <body>
     <h1>Testando Iframe</h1>
-    <p>Esse aqui é o meu instagram
+    <p>Esse aqui é o meu site
         <iframe src="file:///C:/Users/ACER/Documents/Programa%C3%A7%C3%A3o/html.css/desafios/d04/index.html" frameborder="0"></iframe>
+        ainda estou finalizando.
     </p>    
+<H1>APERTE <a href="https://www.cursoemvideo.com/curso/curso-html5-e-css3-modulo-4-de-5-40-horas/aulas/modulo-04-2/modulos/capitulo-22-aula-8-dicas-para-iframes-melhores/">AQUI</a> PARA ACESSAR AO VIDEO DO IFRAME</H1>
+    <h1>cadastro (desprotegido)</h1>
+    <iframe src="iframe03.html" frameborder="1"></iframe>
+    <h1>cadastro (100% protegido)</h1>
+    <iframe src="iframe03.html" sandbox="sandbox" referrerpolicy="no-referrer"></iframe>
+    <h1>cadastro (Protegido devidamente)</h1>
+    <iframe src="iframe03.html" sandbox="allow-same-origin allow-forms allow-scripts" referrerpolicy="no-referrer"></iframe>
+    <!--allow-same-origin / USADO PAR CONTEUDO DE MESMA ORIGEM
+        allow-form / PERMITIR FORMULARIO
+        allow-scripts / FORMULARIO PRECISA DE SCRIPS 
+        referrerpolicy="no-referrer" / PARA NÃO CAPTURAR DADOS DE NINGUEM
+    -->
 </body>
 </html>
