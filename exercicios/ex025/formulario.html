@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+    <style>
+        input#enviar{
+            color: black;
+            background-color: lightgray;
+        }
+        input#enviar:hover{
+            background-color: gray;
+            transform: scale(1.1);
+            box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.514);
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Aqui irei testar um fomulario simples</h1>
+<form action="cadastro.php" autocomplete="off">
+    <p><label for="inome">Nome</label>:
+        <input type="text" name="Nome" id="inome"></p> 
+    <p><label for="isobrenome">Sobrenome</label>:<input type="text" name="Sobrenome" id="isobrenome"></p>
+    <input type="submit" value="Enviar" id="enviar">
+
+</form>
+
+    
+</body>
+</html>
