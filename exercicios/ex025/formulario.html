@@ -14,18 +14,109 @@
             transform: scale(1.1);
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.514);
         }
+        ::placeholder{
+            text-align: center;
+        }
 
     </style>
 </head>
 <body>
     <h1>Aqui irei testar um fomulario simples</h1>
-<form action="cadastro.php" autocomplete="off">
+    <p>Vamos testar de forma simples</p>
+<form action="cadastro.php" method="post" autocomplete="off">
     <p><label for="inome">Nome</label>:
         <input type="text" name="Nome" id="inome"></p> 
     <p><label for="isobrenome">Sobrenome</label>:<input type="text" name="Sobrenome" id="isobrenome"></p>
     <input type="submit" value="Enviar" id="enviar">
 
 </form>
+<hr>
+    <h1>teste para senhas</h1>
+        <p>vamos testar algo mais bem elaborado</p>
+        <form action="cadastro.php" autocomplete="on" method="post">
+            <p>Email:
+                <input type="email" name="email" id="iemail" size="20" required autocomplete="email" placeholder="Email do usuario">
+            </p>
+             <p>Senha: 
+                <input type="password" name="senha" id="isenha" size="20" required minlength="8" maxlength="15" autocomplete="current-password" placeholder="Senha do usuario">
+            </p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+
+        </form>
+        <h2>O que eu usei?</h2>
+            <p>Primeiramente eu usei: <br>
+            (method="post") para não mostrar na URL <br>
+            (size="20") para quantidade de letra <br>
+            (required) para tornar as opções obrigatorias <br>
+            (minlength) para quantidade minima de letra <br>
+            (maxlength) para quantidade maxima de letra <br>
+            (placeholder) para mostrar uma dica dentro da caixa <br>
+            (autocomplete) para completar automatico de forma correta <br>
+       </p>
+       <hr>
+       <h1>vamos testar outros tipos de input</h1>
+       <form action="cadastro.php" autocomplete="on">
+           <p>
+             <label for="idata">Data</label>
+             <input type="date" name="Data" id="idata" value="2003-09-16"> /*Layout diferente AAAA-MM-DD*/
+           </p>
+           <hr>
+            <h2><label for="ibox">Minhas conquistas</label></h2>
+            <p><label for="imoto">Moto</label>
+                <input type="checkbox" name="Moto" id="imoto">
+            </p>
+            <p><label for="icasa">Casa</label>
+                <input type="checkbox" name="Casa" id="icasa">
+            </p>
+            <p><label for="icarro">Carro</label>
+            <input type="checkbox" name="Carro" id="icarro">
+            </p>
+            <p><label for="icomputador">Computador</label>
+            <input type="checkbox" name="Computador" id="icomputador">
+            </p>
+            <p><label for="inamorada">Namorada</label>
+            <input type="checkbox" name="Namorada" id="inamorada">
+            </p>
+            
+            <hr>
+            <h2><label for="icolor">Escolha cores</label></h2>
+            <input type="color" name="color" id="icolor">
+            <hr>
+            <h2>Escolha uma alternativa</h2>
+            <p><label for="iescolha">Água</label>
+            <input type="radio" name="escolha" id="iescolha">
+        </p>
+        <p><label for="iescolha">Suco</label>
+            <input type="radio" name="escolha" id="iescolha">
+        </p>
+        <p><label for="iescolha">Vitamína</label>
+            <input type="radio" name="escolha" id="iescolha">
+        </p>
+        <p><label for="iescolha">Refrigerante</label>
+            <input type="radio" name="escolha" id="iescolha">
+        </p>
+        <hr>
+        <h2><label for="iupload">Faça um Upload Aqui</label></h2>
+        <input type="file" name="upload" id="iupload">
+        <hr>
+        <p><label for="inome">Nome:</label>
+            <input type="text" name="Nome" id="inome">
+        </p>
+        <p><label for="imedia">Média:</label>
+            <input type="number" name="media" id="imedia"
+            min="0" max="10" placeholder="0 a 10" step="0.1"
+            >
+
+        </p>
+
+
+
+
+
+
+
+       </form>
 
     
 </body>
